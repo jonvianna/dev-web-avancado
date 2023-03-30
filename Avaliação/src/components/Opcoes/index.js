@@ -79,6 +79,15 @@ const opcoes =[{
   }
   ]
 
+
+  const Evento = () => {
+    return (
+      alert("Assinado!")
+    )
+  }
+  
+
+
   export default function Opcoes() {
     return (
       <div className="container text-center">
@@ -93,7 +102,7 @@ const opcoes =[{
                     <p>{opcoes.anuncio}</p>
                     <p>{opcoes.resolucao}</p>
                     <p><b>{opcoes.valor}</b></p>
-                    <div className="btn btn-primary">
+                    <div className="btn btn-primary" onClick={Evento}>
                   Assinar
                     </div>
                 </div>
